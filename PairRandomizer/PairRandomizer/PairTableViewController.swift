@@ -17,11 +17,6 @@ class PairTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(true)
-        tableView.reloadData()
-    }
-
     @IBAction func addPersonButton(sender: AnyObject) {
         var personTextField: UITextField?
         
@@ -30,7 +25,7 @@ class PairTableViewController: UITableViewController {
             textField.placeholder = "Name"
             personTextField = textField
         }
-        
+
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alertController.addAction(cancelAction)
         
@@ -46,7 +41,7 @@ class PairTableViewController: UITableViewController {
     
     @IBAction func randomizeButton(sender: AnyObject) {
         PersonController.sharedController.people.shuffle()
-        print("Randomized")
+        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -56,7 +51,7 @@ class PairTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return PersonController.sharedController.people.count
     }
 
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -76,7 +71,7 @@ class PairTableViewController: UITableViewController {
         return cell
     }
 
-    
+    /*
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
@@ -85,6 +80,6 @@ class PairTableViewController: UITableViewController {
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
-    
+    */
 
 }

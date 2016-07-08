@@ -14,6 +14,7 @@ class PersonController {
     static let sharedController = PersonController()
     
     var people = [Person]()
+    var section = [Person]()
     
     init() {
         loadFromPersistentStorage()
@@ -23,6 +24,10 @@ class PersonController {
         let person = Person(name: name)
         people.append(person)
         saveToPersistentStorage()
+    }
+    
+    func createSection() {
+        
     }
     
     func removePerson(person: Person) {
