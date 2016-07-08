@@ -13,6 +13,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="B4Q-Z5-dmn">
+                            <rect key="frame" x="0.0" y="176" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="xsd-kk-fOz"/>
+                                <barButtonItem title="Randomize" style="plain" id="o1R-8o-mgb">
+                                    <connections>
+                                        <action selector="randomizeButton:" destination="wMb-UL-KiW" id="NAI-Xc-98T"/>
+                                    </connections>
+                                </barButtonItem>
+                                <barButtonItem style="plain" systemItem="flexibleSpace" id="lWp-NM-kn1"/>
+                            </items>
+                        </toolbar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" textLabel="QSo-0f-NBe" style="IBUITableViewCellStyleDefault" id="jYw-IQ-qtg">
                                 <rect key="frame" x="0.0" y="114" width="600" height="44"/>
