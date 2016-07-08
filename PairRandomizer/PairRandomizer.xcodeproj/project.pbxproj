@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		402D70F91D2FFAEF0002624F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D70F81D2FFAEF0002624F /* AppDelegate.swift */; };
-		402D70FB1D2FFAEF0002624F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D70FA1D2FFAEF0002624F /* ViewController.swift */; };
 		402D70FE1D2FFAEF0002624F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402D70FC1D2FFAEF0002624F /* Main.storyboard */; };
 		402D71001D2FFAEF0002624F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 402D70FF1D2FFAEF0002624F /* Assets.xcassets */; };
 		402D71031D2FFAEF0002624F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 402D71011D2FFAEF0002624F /* LaunchScreen.storyboard */; };
+		402D710D1D2FFC460002624F /* PairTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D710C1D2FFC460002624F /* PairTableViewController.swift */; };
+		402D71121D2FFF2F0002624F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D71111D2FFF2F0002624F /* Person.swift */; };
+		402D71141D2FFF360002624F /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402D71131D2FFF360002624F /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		402D70F51D2FFAEF0002624F /* PairRandomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PairRandomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		402D70F81D2FFAEF0002624F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		402D70FA1D2FFAEF0002624F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		402D70FD1D2FFAEF0002624F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		402D70FF1D2FFAEF0002624F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		402D71021D2FFAEF0002624F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		402D71041D2FFAEF0002624F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402D710C1D2FFC460002624F /* PairTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PairTableViewController.swift; sourceTree = "<group>"; };
+		402D71111D2FFF2F0002624F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		402D71131D2FFF360002624F /* PersonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				402D70F81D2FFAEF0002624F /* AppDelegate.swift */,
-				402D70FA1D2FFAEF0002624F /* ViewController.swift */,
 				402D70FC1D2FFAEF0002624F /* Main.storyboard */,
+				402D71111D2FFF2F0002624F /* Person.swift */,
+				402D71131D2FFF360002624F /* PersonController.swift */,
+				402D710C1D2FFC460002624F /* PairTableViewController.swift */,
 				402D70FF1D2FFAEF0002624F /* Assets.xcassets */,
 				402D71011D2FFAEF0002624F /* LaunchScreen.storyboard */,
 				402D71041D2FFAEF0002624F /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				402D70FB1D2FFAEF0002624F /* ViewController.swift in Sources */,
+				402D71141D2FFF360002624F /* PersonController.swift in Sources */,
+				402D71121D2FFF2F0002624F /* Person.swift in Sources */,
+				402D710D1D2FFC460002624F /* PairTableViewController.swift in Sources */,
 				402D70F91D2FFAEF0002624F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
